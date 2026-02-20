@@ -1,6 +1,6 @@
-import { useState } from 'react'
-import './App.css'
-
+import { useState } from "react";
+import "./App.css";
+import Football from "./football";
 
 class Person {
   constructor(name, age) {
@@ -40,7 +40,7 @@ function App() {
     <div>
       <h1>LAVANYA</h1>
 
-      <p>{p.greet()}</p> {/* ✅ Now using the class */}
+      <p>{p.greet()}</p>
 
       <p>Count: {count}</p>
       <button onClick={() => setCount(count + 1)}>Increment</button>
@@ -48,6 +48,8 @@ function App() {
       <p>Second Array: {second.join(", ")}</p>
 
       <FruitList />
+
+      <Football isGoal={true} />
     </div>
   );
 }
